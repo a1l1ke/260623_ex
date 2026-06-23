@@ -12,6 +12,7 @@ public class Solution04 {
 class Member {
     String name = "기본값"; // 메서드 영역 (static) 힙 영역 (일반 멤버변수) 는 경합
     int age = 100;
+    String address;
 
     // new
     Member() {
@@ -28,4 +29,9 @@ class Member {
 //    static Member factory() {
 //        return new Member();
 //    }
+
+    Member(String name, int age, String address) {
+        this(name, age);
+        this.address = address;
+    }
 }
