@@ -59,10 +59,10 @@ teacher = new Teacher();
 
 ```mermaid
 flowchart TD
-    call["teacher2.talk(빌리, 100)"] --> local["매개변수: name=빌리, count=100"]
-    call --> instance["현재 객체: this.name=윌리엄"]
-    call --> class1["Teacher.count"]
-    call --> class2["Solution01.count"]
+    invoke["teacher2.talk(빌리, 100)"] --> local["매개변수: name=빌리, count=100"]
+    invoke --> instance["현재 객체: this.name=윌리엄"]
+    invoke --> class1["Teacher.count"]
+    invoke --> class2["Solution01.count"]
 ```
 
 ## 5. 블록 스코프와 실행 결과
